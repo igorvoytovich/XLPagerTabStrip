@@ -380,7 +380,7 @@ open class PagerTabStripViewController: UIViewController, UIScrollViewDelegate {
         // viewControllers
         guard !viewControllers.isEmpty else {
             return
-//            fatalError("viewControllers(for:) should provide at least one child view controller")
+            fatalError("viewControllers(for:) should provide at least one child view controller")
         }
         viewControllers.forEach { if !($0 is IndicatorInfoProvider) { fatalError("Every view controller provided by PagerTabStripDataSource's viewControllers(for:) method must conform to IndicatorInfoProvider") }}
 
